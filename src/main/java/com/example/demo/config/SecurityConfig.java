@@ -62,7 +62,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 		http
 		.authorizeRequests()
 	//	.antMatchers("/**").permitAll()
-			.antMatchers("/","/login").permitAll()
+			.antMatchers("/login").permitAll()
 			.antMatchers("/lichhoc").hasAuthority(AUTH_SV)
 			.antMatchers("/bangdiem").hasAuthority(AUTH_SV)
 			.and()
